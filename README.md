@@ -4,7 +4,7 @@
 2. Installation  
 3. Creating a Basic Flask Application  
 4. Running the Application  
-5. Routing in Flask  
+
 
 ### Introduction  
 Flask is a lightweight and flexible Python web framework used to build web applications. It’s minimal and comes with built-in development tools, making it ideal for small to medium-sized applications.  
