@@ -1,1 +1,28 @@
+{% extends 'base.html' %} 
+{% block title %}Text Filter{% endblock %}
 
+{%block content%}
+    <div class="container">
+        <form action="/" method="POST">
+            <label for="text">Enter your text: </label>
+            <textarea name="text" id="text" rows="4", cols="50">{{original_text}}></textarea>
+            <br>
+            <label for="filter">choose a  filter</label>
+            <select name="filter" id="filter">
+                <option value="none">None</option>
+                <option value="uppercase">Uppercase</option>
+                <option value="capitalize">capitalize</option>
+                <option value="reverse">Reverse</option>
+            </select><br><br>
+
+            <button type="submit">Apply Filter</button>
+        </form>
+        {% if filtered_text %}
+            <div class="result">
+                <h3>Filtered Text:</h3>
+                <p>{{filtered_text}}</p>
+            </div>
+        {% endif %}
+        
+    </div>
+    {% endblock %}
